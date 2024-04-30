@@ -1,0 +1,14 @@
+.text-input-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+label{
+    width: 5em;
+}
+input{
+    padding: 0.4em;
+    flex-grow: 1;
+}

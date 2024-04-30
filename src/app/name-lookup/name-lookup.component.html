@@ -1,0 +1,8 @@
+<div class="membersContainer">
+    <div id="searchBox">
+        <label for="nameSearch">Search by name: </label>
+        <input [(ngModel)]="searchName" id="nameSearch" type="text" placeholder="doesn't need exact match">
+        <button (click)="getUsersByName()">Search</button>
+    </div>
+    <app-user-short-view *ngFor="let user of users" [user]="user"></app-user-short-view>
+</div>

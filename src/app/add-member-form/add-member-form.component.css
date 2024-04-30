@@ -1,0 +1,42 @@
+.memberDetailsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.memberDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    border-width: 0.2em;
+    border-radius: 1em;
+    border-style: solid;
+    width: 35%;
+    padding: 1em;
+    border-color: rgb(97, 0, 188);
+}
+
+.memberDetails button{
+    border-width: 0.2em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(97, 0, 188);
+    padding: 0.5em;
+    background-color: rgb(97, 0, 188);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    width: 100%;
+}
+
+.memberDetails button:hover{
+    background-color: rgb(75, 0, 146);
+    border-color: rgb(75, 0, 146);
+    color: white;
+}
+.input-text{
+    width: 100%;
+}

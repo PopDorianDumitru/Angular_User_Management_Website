@@ -1,0 +1,27 @@
+<div *ngIf="foundUser; else noUser" class="memberDetailsWrapper">
+    <div class="memberDetails">
+        <app-text-input class="input-text" [label]="'Name: '" [id]="'name'" [(value)]="userName"></app-text-input>
+        <app-text-input class="input-text" [label]="'Password: '" [id]="'password'" [(value)]="userPassword"></app-text-input>
+        <app-text-input class="input-text" [label]="'Username: '" [id]="'username'" [(value)]="userUsername"></app-text-input>
+        <app-text-input class="input-text" [label]="'Age: '" [id]="'age'" [(value)]="userAge"></app-text-input>
+        <app-text-input class="input-text" [label]="'Role: '" [id]="'role'" [(value)]="userRole"></app-text-input>
+        <app-text-input class="input-text" [label]="'Profile: '" [id]="'profile'" [(value)]="userProfile"></app-text-input>
+        <app-text-input class="input-text" [label]="'Email: '" [id]="'email'" [(value)]="userEmail"></app-text-input>
+        <app-text-input class="input-text" [label]="'Webpage: '" [id]="'webpage'" [(value)]="userWebpage"></app-text-input>
+
+        <div class="buttonsContainer">
+            <button id="saveButton" (click)="saveChanges()">Save changes</button>
+            <button (click)="goBack()">Go back</button>
+        </div>
+        <button id="deleteButton" (click)="deleteUser()">Delete</button>
+    </div>
+</div>
+
+<ng-template #noUser>
+    <div class="memberDetailsWrapper">
+        <div class="memberDetails">
+            <p>Sorry! Member not found</p>
+            <button (click)="goBack()">Go back</button>
+        </div>
+    </div>
+</ng-template>

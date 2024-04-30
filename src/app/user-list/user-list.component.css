@@ -1,0 +1,31 @@
+.membersContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+    align-items: center;
+}
+
+#searchBox{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.membersContainer button{
+    border-width: 0.2em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(97, 0, 188);
+    padding: 0.5em;
+    background-color: rgb(97, 0, 188);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+.membersContainer button:hover{
+    background-color: rgb(75, 0, 146);
+    border-color: rgb(75, 0, 146);
+    color: white;
+}

@@ -1,0 +1,13 @@
+<div class="memberDetailsWrapper">
+    <div class="memberDetails">
+        <app-text-input [placeholder]="'users real name'" class="input-text" [label]="'Name: '" [id]="'name'" [(value)]="userName"></app-text-input>
+        <app-text-input [placeholder]="'public username'" class="input-text" [label]="'Username: '" [id]="'username'" [(value)]="userUsername"></app-text-input>
+        <app-text-input [placeholder]="'password'" class="input-text" [label]="'Password: '" [id]="'password'" [(value)]="userPassword"></app-text-input>
+        <app-text-input [placeholder]="'her/his/their age'" class="input-text" [label]="'Age: '" [id]="'age'" [(value)]="userAge"></app-text-input>
+        <app-text-input [placeholder]="'role of member'" class="input-text" [label]="'Role: '" [id]="'role'" [(value)]="userRole"></app-text-input>
+        <app-text-input [placeholder]="'user characteristics'" class="input-text" [label]="'Profile: '" [id]="'profile'" [(value)]="userProfile"></app-text-input>
+        <app-text-input [placeholder]="'use professional email'" class="input-text" [label]="'Email: '" [id]="'email'" [(value)]="userEmail"></app-text-input>
+        <app-text-input [placeholder]="'users landing page'" class="input-text" [label]="'Webpage: '" [id]="'webpage'" [(value)]="userWebpage"></app-text-input>
+        <button (click)="saveUser()">Save user</button>
+    </div>
+</div>

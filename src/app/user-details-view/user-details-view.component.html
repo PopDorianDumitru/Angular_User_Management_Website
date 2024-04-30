@@ -1,0 +1,22 @@
+
+
+<div *ngIf="foundUser; else notFound" class="memberDetailsWrapper">
+    <div class="memberDetails">
+        <p>Name: {{user.name}}</p>
+        <p>Username: {{user.username}}</p>
+        <p>Age: {{user.age}}</p>
+        <p>Role: {{user.role}}</p>
+        <p>Profile: {{user.profile}}</p>
+        <p>Email: {{user.email}}</p>
+        <p>Webpage: {{user.webpage}}</p>
+        <button (click)="goBack()">Go back</button>
+    </div>
+</div>
+<ng-template #notFound>
+    <div class="memberDetailsWrapper">
+        <div class="memberDetails">
+            <p>Sorry! Member not found</p>
+            <button (click)="goBack()">Go back</button>
+        </div>
+    </div>
+</ng-template>

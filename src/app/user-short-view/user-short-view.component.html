@@ -1,0 +1,19 @@
+<div *ngIf="user; else noUser">
+    <div class="membersContainerEntry">
+        <div class="membersContainerEntryDetails">
+            <p>Name: {{user.name}}</p>
+            <p>Age: {{user.age}}</p>
+            <p>Role: {{user.role}}</p>
+        </div>
+        <div class="membersContainerEntryActions">
+            <button (click)="navigateToViewDetails()">View Details</button>
+            <button (click)="navigateToEditDetails()">Edit Details</button>
+        </div>
+    </div>
+</div>
+
+<ng-template #noUser>
+    <div class="membersContainerEntry">
+        <p>Sorry! Member not found</p>
+    </div>
+</ng-template>

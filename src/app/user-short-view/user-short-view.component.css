@@ -1,0 +1,59 @@
+.membersContainerEntry{
+    border-width: 0.2em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(97, 0, 188);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    padding: 1em;   
+    width: 20em;
+}
+
+.membersContainerEntryDetails{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 0.2em;
+}
+.membersContainerEntryActions{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+}
+
+.membersContainerEntryActions button{
+    border-width: 0.2em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(97, 0, 188);
+    padding: 0.5em;
+    background-color: rgb(97, 0, 188);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.membersContainerEntryActions button:hover{
+    background-color: rgb(75, 0, 146);
+    border-color: rgb(75, 0, 146);
+    color: white;
+}
+
+.membersContainer button{
+    border-width: 0.2em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(97, 0, 188);
+    padding: 0.5em;
+    background-color: rgb(97, 0, 188);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+.membersContainer button:hover{
+    background-color: rgb(75, 0, 146);
+    border-color: rgb(75, 0, 146);
+    color: white;
+}

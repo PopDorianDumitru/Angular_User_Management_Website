@@ -1,0 +1,10 @@
+<div class="membersContainer">
+    <h1>Members</h1>
+    <p *ngIf="oldSearch !== ''">Searched for: {{oldSearch}}</p>
+    <div id="searchBox">
+        <label id="searchLabel">Search by role: </label>
+        <input [(ngModel)]="roleSearchBinded" id="searchInput" type="text" placeholder="role must be exact match">
+        <button (click)="searchForUsers()">Search</button>
+    </div>
+    <app-user-short-view *ngFor="let user of users" [user]="user"></app-user-short-view>
+</div>
